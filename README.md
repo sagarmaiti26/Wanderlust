@@ -1,7 +1,5 @@
 Project: Wanderlust - House Rental Website
 
-LIVE: https://wanderlust-0yl3.onrender.com/listings
-
 Description:
 
 Developed a full-stack property rental website using MongoDB, Express.js, Node.js, Bootstrap and followed RESTful principles in designing the API for communication between the frontend and backend. Wanderlust enables users to create accounts, add property listings, view them on an interactive map, and leave reviews. The project draws inspiration from popular platforms like Airbnb, emphasizing a seamless user experience in the property rental domain.
