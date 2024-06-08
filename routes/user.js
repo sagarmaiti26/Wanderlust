@@ -11,6 +11,9 @@ const {
   renderLogIn,
   logIn,
 } = require("../controllers/users.js");
+router.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 router.route("/signup").get(renderSignUp).post(wrapAsync(signUp));
 
