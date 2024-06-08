@@ -96,7 +96,7 @@
     <p><b>All Reviews</b></p>
     <%for (let review of listing.review) {%>
     <div class="card col-5 ms-3 mb-3">
-      <div class="card-body">
+      <div class="card-body mb-2">
         <h5 class="card-title mt-2">@<%=review.author.username%></h5>
         <p
           class="starability-result card-text"
@@ -104,6 +104,7 @@
         ></p>
         <p class="card-text"><%=review.comment%></p>
       </div>
+      <% if (currUser&& listing.owner._id.equals(currUser._id)) {%>
       <form
         class="mt-2 mb-3"
         method="post"
@@ -111,6 +112,7 @@
       >
         <button class="btn btn-dark btn-sm mt-2">Delete</button>
       </form>
+      <% } %>
     </div>
 
     <%}%>
